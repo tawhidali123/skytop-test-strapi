@@ -1,0 +1,16 @@
+{
+  "kind": "collectionType",
+  "collectionName": "investment_pages",
+  "info": {
+    "name": "InvestmentPage"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "articles": {
+      "collection": "article"
+    }
+  }
+}

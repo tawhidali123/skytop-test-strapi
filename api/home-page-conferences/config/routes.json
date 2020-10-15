@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/home-page-conferences",
+      "handler": "home-page-conferences.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/home-page-conferences/count",
+      "handler": "home-page-conferences.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/home-page-conferences/:id",
+      "handler": "home-page-conferences.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/home-page-conferences",
+      "handler": "home-page-conferences.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/home-page-conferences/:id",
+      "handler": "home-page-conferences.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/home-page-conferences/:id",
+      "handler": "home-page-conferences.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

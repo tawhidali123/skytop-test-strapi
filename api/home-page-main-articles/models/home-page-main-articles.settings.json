@@ -1,0 +1,19 @@
+{
+  "kind": "collectionType",
+  "collectionName": "home_page_main_articles",
+  "info": {
+    "name": "HomePageMainArticles"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "articles": {
+      "collection": "article"
+    },
+    "videos": {
+      "collection": "video"
+    }
+  }
+}

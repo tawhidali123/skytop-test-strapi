@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/resilience-pages",
+      "handler": "resilience-page.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/resilience-pages/count",
+      "handler": "resilience-page.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/resilience-pages/:id",
+      "handler": "resilience-page.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/resilience-pages",
+      "handler": "resilience-page.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/resilience-pages/:id",
+      "handler": "resilience-page.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/resilience-pages/:id",
+      "handler": "resilience-page.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

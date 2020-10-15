@@ -1,0 +1,16 @@
+{
+  "kind": "collectionType",
+  "collectionName": "home_page_conferences",
+  "info": {
+    "name": "HomePageConferences"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "conferences": {
+      "collection": "conference"
+    }
+  }
+}

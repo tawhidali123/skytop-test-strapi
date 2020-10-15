@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/activism-pages",
+      "handler": "activism-page.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/activism-pages/count",
+      "handler": "activism-page.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/activism-pages/:id",
+      "handler": "activism-page.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/activism-pages",
+      "handler": "activism-page.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/activism-pages/:id",
+      "handler": "activism-page.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/activism-pages/:id",
+      "handler": "activism-page.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
