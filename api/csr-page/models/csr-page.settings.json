@@ -1,0 +1,16 @@
+{
+  "kind": "collectionType",
+  "collectionName": "csr_pages",
+  "info": {
+    "name": "CsrPage"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "articles": {
+      "collection": "article"
+    }
+  }
+}

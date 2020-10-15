@@ -1,0 +1,81 @@
+{
+  "kind": "collectionType",
+  "collectionName": "conferences",
+  "info": {
+    "name": "Conference"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "Name": {
+      "type": "string"
+    },
+    "Date": {
+      "type": "datetime"
+    },
+    "Address": {
+      "type": "string"
+    },
+    "Agenda": {
+      "type": "richtext"
+    },
+    "category": {
+      "model": "category",
+      "via": "conferences"
+    },
+    "Speakers": {
+      "type": "richtext"
+    },
+    "Sponsors": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "Delegates": {
+      "type": "richtext"
+    },
+    "Description": {
+      "type": "text"
+    },
+    "Engage": {
+      "type": "text"
+    },
+    "Discover": {
+      "type": "text"
+    },
+    "Apply": {
+      "type": "text"
+    },
+    "summary": {
+      "type": "string"
+    },
+    "backgroundImage": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "price": {
+      "type": "decimal"
+    },
+    "conferences": {
+      "collection": "conference"
+    },
+    "articles": {
+      "collection": "article"
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/capital-pages",
+      "handler": "capital-page.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/capital-pages/count",
+      "handler": "capital-page.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/capital-pages/:id",
+      "handler": "capital-page.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/capital-pages",
+      "handler": "capital-page.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/capital-pages/:id",
+      "handler": "capital-page.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/capital-pages/:id",
+      "handler": "capital-page.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

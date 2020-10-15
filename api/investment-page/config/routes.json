@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/investment-pages",
+      "handler": "investment-page.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/investment-pages/count",
+      "handler": "investment-page.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/investment-pages/:id",
+      "handler": "investment-page.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/investment-pages",
+      "handler": "investment-page.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/investment-pages/:id",
+      "handler": "investment-page.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/investment-pages/:id",
+      "handler": "investment-page.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

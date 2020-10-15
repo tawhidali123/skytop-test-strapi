@@ -1,0 +1,19 @@
+{
+  "kind": "collectionType",
+  "collectionName": "activism_pages",
+  "info": {
+    "name": "ActivismPage"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "articles": {
+      "collection": "article"
+    },
+    "videos": {
+      "collection": "video"
+    }
+  }
+}

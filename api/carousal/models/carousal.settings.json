@@ -1,0 +1,19 @@
+{
+  "kind": "collectionType",
+  "collectionName": "carousals",
+  "info": {
+    "name": "HomePageCarousal"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "articles": {
+      "collection": "article"
+    },
+    "conferences": {
+      "collection": "conference"
+    }
+  }
+}
